@@ -275,3 +275,21 @@
 // console.log(factoriel(5));
 
 // 16. OPP çalışma
+
+class Person {
+  constructor(name, age, color, country) {
+    this._name = name;
+    this._age = age;
+    this._color = color;
+    this._country = country;
+  }
+  greet() {
+    console.log(
+      `hello my name is ${this._name} I am ${this._age} years old my favori color is ${this._color}. I live in ${this._country} `
+    );
+  }
+}
+
+const halil = new Person("halil", 32, "red", "sweden");
+
+halil.greet();
